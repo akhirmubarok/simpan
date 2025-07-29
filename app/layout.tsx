@@ -9,8 +9,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 // Metadata untuk SEO dan tab browser
 export const metadata: Metadata = {
-  title: "SIMPAN - Profil Produk",
+  title: "SIMPAN - Sistem Integrasi Media Penyimpan Interoperabel",
   description: "Sistem Integrasi Media Penyimpan yang Interoperabilitas",
+  icons: {
+    icon: '/logo.jpeg',
+  },
 };
 
 export default function RootLayout({

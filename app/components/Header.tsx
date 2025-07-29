@@ -19,7 +19,7 @@ const Header = () => {
       setIsScrolled(window.scrollY > 10);
 
       // Logika untuk active navbar
-      const sections = ['beranda', 'fitur', 'user-manual', 'tutorial-video', 'kontak-kami'];
+      const sections = ['beranda', 'fitur', 'user-manual', 'tutorial-video', 'contact-us'];
       const scrollPosition = window.scrollY + 100; // Offset agar lebih akurat
 
       for (const sectionId of sections) {
@@ -49,8 +49,8 @@ const Header = () => {
     { href: '#beranda', label: 'Beranda' },
     { href: '#fitur', label: 'Feature' },
     { href: '#user-manual', label: 'User Manual' },
-    { href: '#tutorial-video', label: 'Tutorial Video' },
-    { href: '#kontak-kami', label: 'Kontak Kami' },
+    { href: '#tutorial-video', label: 'Video Tutorial' },
+    { href: '#contact-us', label: 'Contact Us' },
   ];
 
   return (
@@ -58,15 +58,15 @@ const Header = () => {
       id="header" 
       className={`glassmorphism fixed top-0 left-0 right-0 z-50 transition-shadow duration-300 ${isScrolled ? 'shadow-md' : 'shadow-sm'}`}
     >
-      <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
+      <nav className="container mx-auto px-6 py-2 flex justify-between items-center">
         {/* Logo */}
         <Link href="#beranda">
           <Image 
             src="/logo.jpeg"
             alt="Logo SIMPAN" 
-            width={160}
-            height={40}
-            className="h-10 w-auto"
+            width={200}
+            height={50}
+            className="h-16 w-auto"
             priority
           />
         </Link>

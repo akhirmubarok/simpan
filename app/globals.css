@@ -11,8 +11,14 @@ body {
   font-family: "Inter", sans-serif; /* Pastikan font Inter digunakan */
 }
 
-/* Style tambahan untuk efek backdrop-blur di header */
+/* Style glassmorphism untuk elemen mengambang seperti header dan footer */
 .glassmorphism {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: saturate(180%) blur(10px);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: saturate(180%) blur(8px);
+}
+
+/* Style glassmorphism yang lebih halus untuk konten di dalam halaman */
+.glassmorphism-content {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: saturate(150%) blur(4px);
 }
