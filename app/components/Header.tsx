@@ -53,8 +53,10 @@ const Header = () => {
         {/* Menu untuk Desktop */}
         <ul className="hidden md:flex items-center space-x-8">
           <li><Link href="#beranda" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">Beranda</Link></li>
-          <li><Link href="#fitur" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">Fitur</Link></li>
-          <li><Link href="#tentang" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">Tentang Kami</Link></li>
+          <li><Link href="#fitur" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">Feature</Link></li>
+          <li><Link href="#user-manual" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">User Manual</Link></li>
+          <li><Link href="#tutorial-video" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">Tutorial Video</Link></li>
+          <li><Link href="#kontak-kami" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">Kontak Kami</Link></li>
         </ul>
 
         {/* Tombol Menu Mobile */}
@@ -77,8 +79,10 @@ const Header = () => {
         <ul className="flex flex-col items-center space-y-4 py-4">
           {/* Saat link di klik, tutup menu */}
           <li><Link href="#beranda" onClick={() => setIsMenuOpen(false)} className="mobile-menu-link text-gray-600 hover:text-blue-600">Beranda</Link></li>
-          <li><Link href="#fitur" onClick={() => setIsMenuOpen(false)} className="mobile-menu-link text-gray-600 hover:text-blue-600">Fitur</Link></li>
-          <li><Link href="#tentang" onClick={() => setIsMenuOpen(false)} className="mobile-menu-link text-gray-600 hover:text-blue-600">Tentang Kami</Link></li>
+          <li><Link href="#fitur" onClick={() => setIsMenuOpen(false)} className="mobile-menu-link text-gray-600 hover:text-blue-600">Feature</Link></li>
+          <li><Link href="#user-manual" onClick={() => setIsMenuOpen(false)} className="mobile-menu-link text-gray-600 hover:text-blue-600">User Manual</Link></li>
+          <li><Link href="#tutorial-video" onClick={() => setIsMenuOpen(false)} className="mobile-menu-link text-gray-600 hover:text-blue-600">Tutorial Video</Link></li>
+          <li><Link href="#kontak-kami" onClick={() => setIsMenuOpen(false)} className="mobile-menu-link text-gray-600 hover:text-blue-600">Kontak Kami</Link></li>
         </ul>
       </div>
     </header>
